@@ -1,0 +1,7 @@
+[   
+    {"id": "end"},  
+    {
+    	"command": "send_to_motionbuilder", 
+    	"caption": "Send to MotionBuilder"
+    }
+]
