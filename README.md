@@ -1,5 +1,5 @@
 # MotionBuilderSublime
-### A Sublime Text 2/3 plugin based on MayaSublime by Justin Isreal (https://github.com/justinfx/MayaSublime).
+### A Sublime Text 2/3 plugin.
 
 Send selected Python code snippets or whole files from SublimeText to MotionBuilder via telnet.
 
@@ -35,3 +35,9 @@ As an example, if you want to open a connection on port 4242 for Python (the def
 ```python
 # PLACEHOLDER
 ```
+
+### Credits
+
+MotionBuilderSublime is inspired by and primarily based on [MayaSublime] (https://github.com/justinfx/MayaSublime) by [Justin Isreal] (https://github.com/justinfx).
+
+Additional credit belongs to [Chris Evans] (https://github.com/chrisevans3d) for sharing how to handle a telnet connection to MotionBuilder in his blog post, [Creating Interactive MotionBuilder User Interface Tools] (http://www.chrisevans3d.com/pub_blog/creating-interactive-motionbuilder-user-interface-tools/).
