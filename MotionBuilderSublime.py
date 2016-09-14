@@ -159,9 +159,6 @@ class send_to_motionbuilder(sublime_plugin.TextCommand):
         # entire source file, and tell MotionBuilder to execute it.
         snips = []
         if sel_size == 0:
-            # msg = 'Select one line. Support for auto sending entire \
-            # file contents has not yet been implemented!'
-            # sublime.error_message(msg)
             exec_type = 'execfile'
 
             print('Nothing Selected, Attempting to exec entire file')
