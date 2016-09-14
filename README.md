@@ -9,13 +9,13 @@ Send selected Python code snippets or whole files from SublimeText to MotionBuil
 
 **Easy Install**
 
-*WARNING:* MotionBuilderSublime has not yet been submitted to Package Control.
+*WARNING:* MotionBuilderSublime has not yet been submitted to Package Control. Use the Manual Install instructions below for now.
 
 You can install this plugin directly from Sublime Package Control:
 
 https://packagecontrol.io/packages/MotionBuilderSublime
 
-**Manual install**
+**Manual Install**
 
 1. clone this repo into the `SublimeText2/3 -> Preference -> Browse Packages` directory:  
 `git clone git://github.com/matthewkapfhammer/MotionBuilderSublime.git`
@@ -35,10 +35,10 @@ A telnet connection will be made to a running MotionBuilder instance on the conf
 
 The context manager class that sends Python command to MotionBuilder can also be used in any external application. 
 
-See the docstring for MotionBuilderSublime.py -> ```MBPipe```
+See the docstring for ```MotionBuilderSublime.py``` -> ```MBPipe```
 
 ### Credits
 
-MotionBuilderSublime is inspired by and primarily based on [MayaSublime] (https://github.com/justinfx/MayaSublime) by [Justin Isreal] (https://github.com/justinfx).
+MotionBuilderSublime is inspired by and primarily based on [MayaSublime] (https://github.com/justinfx/MayaSublime) by [Justin Israel] (https://github.com/justinfx).
 
 Additional credit belongs to [Chris Evans] (https://github.com/chrisevans3d) for sharing how to handle a telnet connection to MotionBuilder in his blog post, [Creating Interactive MotionBuilder User Interface Tools] (http://www.chrisevans3d.com/pub_blog/creating-interactive-motionbuilder-user-interface-tools/).
