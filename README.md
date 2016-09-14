@@ -9,6 +9,8 @@ Send selected Python code snippets or whole files from SublimeText to MotionBuil
 
 **Easy Install**
 
+*WARNING:* MotionBuilderSublime has not yet been submitted to Package Control.
+
 You can install this plugin directly from Sublime Package Control:
 
 https://packagecontrol.io/packages/MotionBuilderSublime
@@ -26,15 +28,14 @@ Note - Ideally you would make your custom changes to the user settings and not t
 
 ### Usage
 
-To send a snippet, simply select some code in a mel or python script, and hit `ctrl+return`, or right click and choose "Send To MotionBuilder".
-A socket conncetion will be made to a running MotionBuilder instance on the configured port matching mel or python, and the code will be 
-run in MotionBuilder's environment.
+To send a snippet, simply select some code in a Python script, and hit `ctrl+alt+return`, or right click and choose "Send To MotionBuilder".
+A telnet connection will be made to a running MotionBuilder instance on the configured port matching Python, and the code will be run in MotionBuilder's environment.
 
-As an example, if you want to open a connection on port 4242 for Python (the default port in the config), you can do the following:
+### Beyond The Plugin
 
-```python
-# PLACEHOLDER
-```
+The context manager class that sends Python command to MotionBuilder can also be used in any external application. 
+
+See the docstring for MotionBuilderSublime.py -> ```MBPipe```
 
 ### Credits
 
