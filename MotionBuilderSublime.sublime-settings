@@ -1,0 +1,28 @@
+{
+	
+	// MotionBuilder commandPort HOST name (127.0.0.1, ...)
+	"motionbuilder_hostname": "127.0.0.1",
+
+	// MotionBuilder commandPort to communicate via Python
+	"python_command_port" : 4242,
+
+	// When sending selected code to MotionBuilder, strip
+	// out single-line comments in order to reduce
+	// the amount of data sent, and leave more room
+	// for more code to be sent
+	//
+	// A reason for disabling this feature is if you
+	// rely on accurate line numbers from errors in 
+	// your code, reported by the Script Editor
+	//
+	// When sending whole files (nothing selected),
+	// comments are never stripped.
+	"strip_sending_comments": true,
+
+	// This wraps Python code in its own namespace
+	// to avoid collisions with the main MotionBuilder
+	// environment. (It is safer but if you are
+	// mixing this plugin with code from the
+	// Script Editor, set this to false.)
+	"no_collisions": true
+}

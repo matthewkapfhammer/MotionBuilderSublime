@@ -4,24 +4,16 @@
         "command": "send_to_motionbuilder"
     },
     {
-        "caption": "MotionBuilder: Enable ScriptEditor Output",
-        "command": "enable_motionbuilder_output"
-    },
-    {
-        "caption": "MotionBuilder: Disable ScriptEditor Output",
-        "command": "disable_motionbuilder_output"
-    },
-    {
         "caption": "Preferences: MotionBuilder Settings",
         "command": "open_file", "args":
         {
-            "file": "${packages}/MotionBuilder/MotionBuilder.sublime-settings"}
+            "file": "${packages}/MotionBuilderSublime/MotionBuilder.sublime-settings"}
         },
     {
         "caption": "Preferences: MotionBuilder Key Bindings",
         "command": "open_file", "args":
         {
-            "file": "${packages}/MotionBuilder/Default (Windows).sublime-keymap",
+            "file": "${packages}/MotionBuilderSublime/Default (Windows).sublime-keymap",
             "platform": "Windows"
         }
     },
@@ -29,7 +21,7 @@
         "caption": "Preferences: MotionBuilder Key Bindings",
         "command": "open_file", "args":
         {
-            "file": "${packages}/MotionBuilder/Default (Linux).sublime-keymap",
+            "file": "${packages}/MotionBuilderSublime/Default (Linux).sublime-keymap",
             "platform": "Linux"
         }
     }
