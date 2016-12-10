@@ -43,45 +43,27 @@ def sync_settings():
     _settings['no_collisions'] = so.get('no_collisions')
 
 
-class MBPipe(object):
-    """Context manager for sending lines of code to MotionBuilder via
-    Python's telnetlib. 
+def telnet_write(command, host='127.0.0.1', port=4242):
+    """Sends a block of code to MotionBuilder via Python's telnetlib.
 
     Example:
         command = "FBModelCube('TestCube1')"
-        with MBPipe() as mbp:
-            rsp = mbp.send(cmd)
-            if str(rsp):print(rsp)
+        rsp = telnet_write(command)
+        if rsp:print(rsp)
     """
+    msg = '{0}\n'.format(command)
+    print('SENDING: {0!r}'.format(msg))
 
-    def __init__(self, host='127.0.0.1', port=4242):
-        self.host = host
-        self.port = port
+    connection = Telnet(host, port)
+    connection.read_until('>>>')
+    connection.write(msg)
 
-    def __enter__(self):
-        self.connection = Telnet(self.host, self.port)
-        self.connection.read_until('>>>')
-        return self
+    response = connection.read_until('>>> ', .1)[:-6]
+    response.replace('\r', '')
 
-    def __exit__(self, *args):
-        self.connection.close()
+    connection.close()
 
-    def send(self, command):
-        """Send command to MotionBuilder, read, and return.
-        Todo:
-            * More multiline testing.
-        Args:
-            command (str): Line of code to execute in MotionBuilder.
-        Returns:
-            telnet response (str)
-        """
-        msg = '{0}\n'.format(command)
-        print('SENDING: {0!r}'.format(msg))
-        self.connection.write(msg)
-        response = self.connection.read_until('>>> ', .1)[:-6]
-        response.replace('\r', '')
-
-        return str(response)
+    return str(response)
 
 
 def _py_str(string):
@@ -100,9 +82,8 @@ def _send_to_motionbuilder(command, quiet=False):
         quiet (bool): No popup.
     """
     try:
-        with MBPipe() as mbp:
-            rsp = mbp.send(_py_str(command))
-            print(rsp)
+        rsp = telnet_write(_py_str(command))
+        if rsp:print(rsp)
     except socket.error:
         host = _settings['host']
         port = _settings['port']
