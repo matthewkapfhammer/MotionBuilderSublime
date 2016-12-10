@@ -9,8 +9,6 @@ Send selected Python code snippets or whole files from SublimeText to MotionBuil
 
 **Easy Install**
 
-*WARNING:* MotionBuilderSublime has not yet been submitted to Package Control. Use the Manual Install instructions below for now.
-
 You can install this plugin directly from Sublime Package Control:
 
 https://packagecontrol.io/packages/MotionBuilderSublime
