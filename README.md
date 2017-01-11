@@ -26,7 +26,7 @@ Note - Ideally you would make your custom changes to the user settings and not t
 
 ### Usage
 
-To send a snippet, simply select some code in a Python script, and hit `ctrl+alt+return`, or right click and choose "Send To MotionBuilder".
+To send a snippet, simply select some code in a Python script, and hit `ctrl+alt+shift+return`, or right click and choose "Send To MotionBuilder".
 A telnet connection will be made to a running MotionBuilder instance on the configured port matching Python, and the code will be run in MotionBuilder's environment.
 
 ### Beyond The Plugin
