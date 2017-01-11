@@ -4,12 +4,12 @@
 	// PYTHON keymaps
 	//
 	{
-		"keys": ["ctrl+alt+enter"],
+		"keys": ["ctrl+alt+shift+enter"],
 		"command": "send_to_motionbuilder",
 		"context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]
 	},
 	{
-		"keys": ["ctrl+alt+keypad_enter"],
+		"keys": ["ctrl+alt+shift+keypad_enter"],
 		"command": "send_to_motionbuilder",
 		"context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]
 	}
