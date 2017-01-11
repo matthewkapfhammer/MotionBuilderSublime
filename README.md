@@ -31,9 +31,9 @@ A telnet connection will be made to a running MotionBuilder instance on the conf
 
 ### Beyond The Plugin
 
-The context manager class that sends Python command to MotionBuilder can also be used in any external application. 
+The function that sends a Python command to MotionBuilder can also be used in any external application. 
 
-See the docstring for ```MotionBuilderSublime.py``` -> ```MBPipe```
+See ```MotionBuilderSublime.py``` -> ```telnet_write```
 
 ### Credits
 
