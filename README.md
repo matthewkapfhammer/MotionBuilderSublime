@@ -11,7 +11,9 @@ Send selected Python code snippets or whole files from SublimeText to MotionBuil
 
 You can install this plugin directly from Sublime Package Control:
 
-https://packagecontrol.io/packages/MotionBuilderSublime
+https://packagecontrol.io/packages/MotionBuilder
+
+Note: Due to current naming policies, the listed package name is ```MotionBuilder``` - not ```MotionBuilderSublime```.
 
 **Manual Install**
 
@@ -22,7 +24,7 @@ https://packagecontrol.io/packages/MotionBuilderSublime
 
 3. Optionally edit the keymap file to change the default hotkey from <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>return</kbd> to something else.
 
-Note - Ideally you would make your custom changes to the user settings and not the default settings, so that they do not get overwritten when the plugin is updated.
+Note: Ideally you would make your custom changes to the user settings and not the default settings, so that they do not get overwritten when the plugin is updated.
 
 ### Usage
 
